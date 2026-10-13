@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eric Tapia | Gameplay Testing &amp; Mod Development | 35 Mill Interactive</title>
+<meta name="description" content="Eric Tapia (35 Mill Interactive): published Conan Exiles mod author and gameplay tester pursuing a first studio QA role.">
+<meta property="og:title" content="Eric Tapia | Gameplay Testing &amp; Mod Development">
+<meta property="og:description" content="Published Conan Exiles mod author pursuing a first studio QA role.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="assets/logo.webp" alt="" width="36" height="36"><span>35 Mill Interactive</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#video">Video</a>
+    <a href="#mods">Mods</a>
+    <a href="#qa">QA Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <picture>
+    <source srcset="assets/banner.webp" type="image/webp">
+    <img class="hero-banner" src="assets/banner.jpg" alt="35 Mill Interactive banner" width="1600" height="900">
+  </picture>
+  <div class="hero-text">
+    <h1 class="metal">Eric Tapia</h1>
+    <p class="tagline"><span class="nw">Gameplay Testing</span> <span class="sep">|</span> <span class="nw">Mod Development</span></p>
+    <p class="hero-sub">Published Conan Exiles mod author pursuing a first studio QA role.</p>
+    <div class="cta-row">
+      <a class="btn btn-red" href="Eric_Tapia_GameDev_Resume.pdf" download>Download Resume</a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2 class="metal">About</h2>
+  <div class="about-grid">
+    <img class="about-logo" src="assets/logo.webp" alt="35 Mill Interactive logo" width="512" height="512" loading="lazy">
+    <div>
+      <p>I'm an independent game systems creator and published Conan Exiles mod author working under the name <strong>35 Mill Interactive</strong>. I build and test multiplayer RPG content, investigate unexpected behavior, and document findings for other creators.</p>
+      <p>My ongoing project, <strong>Altonis: Afterfall – The Crownlands</strong>, is a custom multiplayer RPG world with quests, branching dungeons, merchants, banking, travel, and progression, which I create, script, and administer myself.</p>
+      <p>I bring a player-focused eye for progression, usability, and game feel, backed by years of customer support, technical troubleshooting, and team-training experience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="video" class="section">
+  <h2 class="metal">Featured Video</h2>
+  <p class="lead">Homepoint Crystals V2: Shatter System mod showcase.</p>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube-nocookie.com/embed/Jt0PT2fxrTw" title="Homepoint Crystals V2 – Shatter System showcase" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <p class="center"><a class="link" href="https://www.youtube.com/@35MillInteractive" target="_blank" rel="noopener">More on YouTube: @35MillInteractive →</a></p>
+</section>
+
+<section id="mods" class="section">
+  <h2 class="metal">Published Mods</h2>
+  <p class="lead">Live on the Conan Exiles Steam Workshop.</p>
+  <div class="cards">
+    <article class="card">
+      <span class="tag">Conan Exiles · Steam Workshop</span>
+      <h3>Altonis: Homepoint Crystals V2</h3>
+      <p>Published mod for the Altonis: Afterfall – The Crownlands project. Its Shatter System is shown in the featured video above.</p>
+      <a class="btn btn-red" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3817566341" target="_blank" rel="noopener">View on Workshop</a>
+    </article>
+    <article class="card">
+      <span class="tag">Conan Exiles · Steam Workshop</span>
+      <h3>Altonis: Crownlands – Dungeon Master's Spoils V2</h3>
+      <p>Published mod for the Altonis: Afterfall – The Crownlands project, the custom multiplayer RPG world I build and maintain.</p>
+      <a class="btn btn-red" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3817657267" target="_blank" rel="noopener">View on Workshop</a>
+    </article>
+  </div>
+</section>
+
+<section id="qa" class="section">
+  <h2 class="metal">QA Case Studies</h2>
+  <p class="lead">Short write-ups of testing work from my Conan Exiles project.</p>
+  <div class="cases">
+    <article class="case">
+      <span class="case-num">01</span>
+      <h3>Death-Prevention &amp; Player-State Testing</h3>
+      <dl>
+        <dt>Tested</dt><dd>Death-prevention behavior, plus character-sheet rolls with no configuration.</dd>
+        <dt>Method</dt><dd>Repeated the scenario across quick relogs and full character spawns, comparing expected vs. actual results in each case.</dd>
+        <dt>Finding</dt><dd>Told a persistent status effect apart from a newly triggered script. Confirmed that unconfigured character-sheet rolls return unmodified results, not zero.</dd>
+      </dl>
+    </article>
+    <article class="case">
+      <span class="case-num">02</span>
+      <h3>Sound-Node &amp; Camera Comparison</h3>
+      <dl>
+        <dt>Tested</dt><dd>Four sound-node types, plus camera transitions after fade-to-black.</dd>
+        <dt>Method</dt><dd>Tested each node type side by side and documented who hears it, where playback occurs, and which controls take effect.</dd>
+        <dt>Finding</dt><dd>Documented the behavior of all four node types. Identified the camera-position setup needed to prevent awkward transitions after fade-to-black.</dd>
+      </dl>
+    </article>
+    <article class="case">
+      <span class="case-num">03</span>
+      <h3>Server Load-Order Troubleshooting</h3>
+      <dl>
+        <dt>Tested</dt><dd>Mod and load-order issues and server startup problems.</dd>
+        <dt>Method</dt><dd>Kept separate test and main servers, investigated issues on the test environment, and worked with hosting support to narrow down causes.</dd>
+        <dt>Finding</dt><dd>Narrowed down the causes with hosting support and validated recovery before changes reached the main server.</dd>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2 class="metal">Skills</h2>
+  <div class="skills">
+    <div class="skill">
+      <h3>Gameplay Testing &amp; Troubleshooting</h3>
+      <ul class="chips"><li>Manual playtesting</li><li>Edge-case investigation</li><li>Player-state checks</li><li>Log review</li><li>Expected vs. actual behavior</li></ul>
+    </div>
+    <div class="skill">
+      <h3>Scripting &amp; Mod Development</h3>
+      <ul class="chips"><li>Conan Exiles DevKit</li><li>Unreal Blueprint</li><li>ToT! Sudo</li><li>Pippi</li><li>Data Tables</li><li>Custom item/feat IDs</li><li>Status effects</li><li>Steam Workshop publishing</li></ul>
+    </div>
+    <div class="skill">
+      <h3>RPG Systems &amp; World Design</h3>
+      <ul class="chips"><li>Quest flow</li><li>Branching dungeons</li><li>Encounter logic</li><li>Progression gates</li><li>Resource economies</li><li>Narrative worldbuilding</li><li>Player onboarding</li></ul>
+    </div>
+    <div class="skill">
+      <h3>Documentation &amp; Communication</h3>
+      <ul class="chips"><li>Technical guides</li><li>Script flowcharts</li><li>Item registries</li><li>Implementation notes</li><li>Issue write-ups</li></ul>
+    </div>
+    <div class="skill">
+      <h3>Visual &amp; Audio</h3>
+      <ul class="chips"><li>CG art</li><li>3D animation</li><li>Architectural visualization</li><li>Photography</li><li>Image/video editing</li><li>In-game audio placement</li><li>Attenuation</li><li>Camera transitions</li></ul>
+    </div>
+    <div class="skill">
+      <h3>Professional Background</h3>
+      <ul class="chips"><li>Customer &amp; technical support</li><li>Team training</li><li>Computer repair &amp; QC (Staples EasyTech)</li><li>Top-ranked booking agent</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="section resume-band">
+  <h2 class="metal">Resume</h2>
+  <p class="lead">Full work history, capabilities, and project details.</p>
+  <a class="btn btn-red btn-lg" href="Eric_Tapia_GameDev_Resume.pdf" download>Download Resume (PDF)</a>
+</section>
+
+<section id="contact" class="section">
+  <h2 class="metal">Contact</h2>
+  <p class="lead">Open to QA tester and game tester roles. Based in Wilmington, NC.</p>
+  <div class="contact-grid">
+    <a class="contact" href="mailto:erict5290@icloud.com"><span>Email</span>erict5290@icloud.com</a>
+    <a class="contact" href="https://www.youtube.com/@35MillInteractive" target="_blank" rel="noopener"><span>YouTube</span>@35MillInteractive</a>
+    <a class="contact" href="https://discord.gg/QcQ4gaB2F" target="_blank" rel="noopener"><span>Discord</span>discord.gg/QcQ4gaB2F</a>
+    <a class="contact" href="https://steamcommunity.com/id/35mill" target="_blank" rel="noopener"><span>Steam</span>steamcommunity.com/id/35mill</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <img src="assets/logo.webp" alt="" width="40" height="40" loading="lazy">
+  <p>© 2026 Eric Tapia · 35 Mill Interactive</p>
+</footer>
+
+</body>
+</html>
